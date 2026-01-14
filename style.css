@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background: #f7f2f8;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.intro {
+  max-width: 500px;
+}
+.intro h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  color: #4a174b;
+  margin-bottom: 20px;
+}
+.intro p {
+  color: #8a6b8f;
+  line-height: 1.6;
+}
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rating {
+  background: #f0e6f2;
+  padding: 18px 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 350px;
+}
+.rating:nth-child(2) {
+  margin-left: 40px;
+}
+.rating:nth-child(3) {
+  margin-left: 80px;
+}
+.stars {
+  color: #f6b64c;
+  font-size: 20px;
+}
+.rating span {
+  color: #4a174b;
+  font-weight: bold;
+}
+.testimonials {
+  display: flex;
+  gap: 30px;
+}
+.card {
+  background: #4a174b;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  flex: 1;
+}
+.card-2 {
+  margin-top: 30px;
+}
+.card-3 {
+  margin-top: 60px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.user h3 {
+  font-size: 15px;
+}
+.user p {
+  font-size: 13px;
+  color: #d2a9d6;
+}
+.quote {
+  line-height: 1.6;
+  font-size: 15px;
+}
+@media (max-width: 900px) {
+  .top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ratings {
+    align-items: center;
+  }
+  .rating:nth-child(2),
+  .rating:nth-child(3) {
+    margin-left: 0;
+  }
+  .testimonials {
+    flex-direction: column;
+  }
+  .card-2,
+  .card-3 {
+    margin-top: 20px;
+  }
+  .intro h1 {
+    font-size: 36px;
+  }
+}
